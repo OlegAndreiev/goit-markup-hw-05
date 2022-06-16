@@ -1,1 +1,2 @@
-# goit-markup-hw-05
+# goit-markup-hw-01
+Репозіторій для ДЗ №1
