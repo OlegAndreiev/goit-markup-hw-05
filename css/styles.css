@@ -596,6 +596,7 @@ p {
 }
 
 .backdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -614,7 +615,7 @@ p {
   border-radius: 4px;
 }
 
-.close-modal {
+.button-close-modal {
   position: absolute;
   display: flex;
   top: 8px;
@@ -626,6 +627,8 @@ p {
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
 }
 
 /* -----------------Портолио-----------------*/
@@ -743,4 +746,32 @@ p {
 .card-box .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-top-text {
+  position: absolute;
+  top: 0;
+
+  height: 100%;
+  width: 100%;
+  padding: 63px 24px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .card-top-text {
+  transform: translateY(0);
 }
