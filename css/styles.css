@@ -838,3 +838,7 @@ p {
 .card:hover .card-top-text {
   transform: translateY(0);
 }
+
+.card .link:focus .card-top-text {
+  transform: translateY(0);
+}
